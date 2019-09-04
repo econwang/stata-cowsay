@@ -12,7 +12,7 @@ cowsay
 
 Mooooo
 
-`version 1.0 25jul2018`
+`version 2.0 04sep2019`
 
 
 Overview
@@ -20,6 +20,7 @@ Overview
 
 Much-needed [Cowsay](https://en.wikipedia.org/wiki/Cowsay) functionality for Stata.
 
+Add `as` option for `display` by econwang.
 
 
 Installation
@@ -30,7 +31,7 @@ You have two options to get mooving with cowsay.
 1. The most recent version can be installed from Github with the following Stata command:
 
 ```stata
-net install cowsay, from(https://raw.githubusercontent.com/mdroste/stata-cowsay/master/)
+net install cowsay, from(https://raw.githubusercontent.com/econwang/stata-cowsay/master/)
 ```
 
 2. A ZIP containing the program can be downloaded and manually placed on the user's adopath from Github.
@@ -62,7 +63,7 @@ Consider the following example Stata output:
 ------------------------------------------------------------------------------
 
 . cowsay "Mooo! The R2 is `e(r2)'"
- 
+
    -----------------------------------
   < Mooo! The R2 is .2195828561874973 >
    -----------------------------------
@@ -86,7 +87,7 @@ Benchmarks
 Cowsay is the first Stata program to implement cowsay functionality in 33 years. This point is illustrated below.
 
 ![cowsay benchmark](benchmarks/benchmark_cowsay.png "cowsay benchmark")
-  
+
 
 Todo
 ---------------------------------
@@ -108,4 +109,3 @@ License
 ---------------------------------
 
 Cows have no concept of software licensing.
-
